@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinetic Morph Loading Animtion | @coding.stella</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="km-preloader" role="progressbar" aria-label="Loading" aria-live="polite">
+    <div class="km-container">
+      <div class="km-stage-wrapper">
+        <span class="km-reticle km-reticle-tl"></span>
+        <span class="km-reticle km-reticle-tr"></span>
+        <span class="km-reticle km-reticle-bl"></span>
+        <span class="km-reticle km-reticle-br"></span>
+        <div class="km-stage">
+          <div class="km-tile km-tile-1"></div>
+          <div class="km-tile km-tile-2"></div>
+          <div class="km-tile km-tile-3"></div>
+          <div class="km-tile km-tile-4"></div>
+        </div>
+      </div>
+
+      <div class="km-counter-wrap">
+        <span id="km-count" class="km-number">0</span>
+        <span class="km-percent">%</span>
+      </div>
+
+      <div class="km-telemetry-box">
+        <div class="km-meta-row">
+          <span class="km-title-tag">KINETIC MORPH</span>
+          <span id="km-status" class="km-status-tag">INITIALIZING</span>
+        </div>
+        <div class="km-track-line">
+          <div id="km-fill" class="km-fill-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Revealed Page -->
+  <main id="white-page" class="page">
+    <h1 class="greeting">Hey</h1>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
